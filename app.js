@@ -87,7 +87,7 @@ app.get('/gist/:id', routes.view_post);
 app.get('/user/:username', routes.user_index);
 
 var port = process.env.PORT || 3000;
-
+/*
 exports.start = function(done)
 {
     app.listen(port, function(){
@@ -95,3 +95,8 @@ exports.start = function(done)
     });
     done();
 }
+*/
+app.listen(port, function(){
+    console.log("Express server listening on port %d in %s mode", port, app.settings.env);
+});
+

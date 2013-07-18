@@ -72,7 +72,7 @@ var get_user = function(req, callback) {
 };
 
 exports.index = function(req, res) {
-  BlogPost.find({isPublic: true}).sort('tstamp', -1).exec(generic_doc_handler(res, function(docs) {
+  BlogPost.find({isPublic: true}).sort({'tstamp': -1}).exec(generic_doc_handler(res, function(docs) {
     render(res, 'index', {title: "Home", blog_posts: docs, user: req.session.user});
   }));
 };

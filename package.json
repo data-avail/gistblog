@@ -7,7 +7,7 @@
     "jade": ">= 0.0.1",
     "ejs": "0.7.1",
     "github": "0.1.8",
-    "mongoose": "2.5.10",
+    "mongoose": "latest",
     "shortid": "1.0.6",
     "MD5": "latest",
     "connect-auth": "0.5.1",
